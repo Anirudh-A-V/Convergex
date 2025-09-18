@@ -38,7 +38,7 @@ export default function HomeScreen() {
         value={filter}
         onValueChange={(value) => dispatch({ type: 'SET_FILTER', payload: value as 'all' | 'subscribed' })}
         buttons={[
-          { value: 'all', label: 'General Feed' },
+          { value: 'all', label: 'General' },
           { value: 'subscribed', label: 'Subscribed' },
         ]}
         style={styles.filterButtons}
