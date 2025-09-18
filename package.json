@@ -1,15 +1,44 @@
 {
-  "name": "convergex-monorepo",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "name": "convergex",
+  "main": "expo-router/entry",
+  "version": "1.0.0",
   "scripts": {
-    "start:mobile": "pnpm --filter @convergex/mobile dev || (cd apps/mobile && npx expo start)",
-    "start:functions": "cd apps/functions && npm run serve",
-    "start:javafx": "cd apps/javafx && ./gradlew run",
-    "bootstrap": "npm install && (cd apps/mobile && npm install) && (cd apps/functions && npm install) && (cd packages/shared-types && npm install)"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "@expo/vector-icons": "^15.0.2",
+    "@react-native-community/datetimepicker": "8.4.4",
+    "@react-navigation/native": "^7.1.8",
+    "expo": "~54.0.8",
+    "expo-constants": "~18.0.9",
+    "expo-font": "~14.0.8",
+    "expo-image-picker": "~17.0.8",
+    "expo-linking": "~8.0.8",
+    "expo-media-library": "~18.2.0",
+    "expo-router": "~6.0.6",
+    "expo-splash-screen": "~31.0.10",
+    "expo-status-bar": "~3.0.8",
+    "expo-web-browser": "~15.0.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.4",
+    "react-native-calendars": "^1.1313.0",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-paper": "^5.14.5",
+    "react-native-reanimated": "~4.1.0",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-vector-icons": "^10.3.0",
+    "react-native-web": "~0.21.0",
+    "react-native-worklets": "0.5.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.0",
+    "react-test-renderer": "19.1.0",
+    "typescript": "~5.9.2"
+  },
+  "private": true
 }
