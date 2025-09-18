@@ -38,11 +38,13 @@ export default function HomeScreen() {
         value={filter}
         onValueChange={(value) => dispatch({ type: 'SET_FILTER', payload: value as 'all' | 'subscribed' })}
         buttons={[
-          { value: 'all', label: 'General' },
+          { value: 'all', label: 'General Feed' },
           { value: 'subscribed', label: 'Subscribed' },
         ]}
         style={styles.filterButtons}
       />
+
+
       <FlatList
         ref={flatListRef}
         data={filteredEvents}

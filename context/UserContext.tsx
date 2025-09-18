@@ -46,10 +46,10 @@ const UserContext = createContext<{ state: State; dispatch: React.Dispatch<Actio
 export const UserProvider = ({ children }: { children: ReactNode }) => {
   const initialState: State = {
     profile: {
-      name: 'Abhiram A V',
-      email: '241119@tkmce.ac.in',
-      phone: '123456789',
-      year: '2nd Year',
+      name: 'Christin Sibi',
+      email: 'tve20cs128@cet.ac.in',
+      phone: '9846656129',
+      year: '4th Year',
       course: 'Computer Science',
       profilePictureUrl: 'https://picsum.photos/200',
       interests: ['UI/UX Design', 'Web Development', 'Web3'],

@@ -67,12 +67,12 @@ const EventsContext = createContext<{ state: State; dispatch: React.Dispatch<Act
 export const EventsProvider = ({ children }: { children: ReactNode }) => {
   const initialState: State = {
     events: [
-        { id: '1', title: 'Introduction to Python', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...', imageUrls: ['https://picsum.photos/700'], date: new Date('2025-10-03T14:00:00'), location: 'Main Auditorium', clubName: 'TinkerHub TKMCE', clubLogoUrl: 'https://picsum.photos/100' },
+        { id: '1', title: 'Introduction to Python', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...', imageUrls: ['https://picsum.photos/700'], date: new Date('2025-10-03T14:00:00'), location: 'Main Auditorium', clubName: 'TinkerHub CET', clubLogoUrl: 'https://picsum.photos/100' },
         { id: '2', title: 'MAKE-A-TON 5.0', description: 'Ut enim ad minim veniam, quis nostrud exercitation...', imageUrls: ['https://i.imgur.com/SFe4TEG.png', 'https://picsum.photos/702'], date: new Date('2025-10-04T09:00:00'), location: 'Online', clubName: 'IEEE Club', clubLogoUrl: 'https://picsum.photos/101' },
     ],
     registeredEventIds: new Set(),
     savedEventIds: new Set(),
-    followedClubNames: new Set(['TinkerHub TKMCE']),
+    followedClubNames: new Set(['TinkerHub CET']),
     filter: 'all',
   };
 
